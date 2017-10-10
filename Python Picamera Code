@@ -1,0 +1,10 @@
+from time import sleep #importamos la libreria que se utiliza basicamente para mandar una pausa
+from picamera import picamera #importamos la libreria para activar la camara en python
+
+
+camera = PiCamera()
+camera.resolution = (1024, 768)
+camera.start_preview()
+
+sleep(2)
+camera.capture('foto.jpg')
